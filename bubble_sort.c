@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include "sort.h"
 
-int bubble_sort(int *a, int n)
+void bubble_sort(int *a, int n)
 {
     int i, j;
     int tmp;
@@ -16,19 +16,4 @@ int bubble_sort(int *a, int n)
             }
 	}
     }
-}
-
-int main(void)
-{
-    int a[10] = {1,0,9,7,4,5,2,3,8,6};
-    int i;
-
-    bubble_sort(a, 10);
-
-    for (i=0; i<=9; i++)
-    {
-	printf("%d ", a[i]);
-    }
-    printf("\n");
-    return 0;
 }

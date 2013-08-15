@@ -1,7 +1,6 @@
-#include <stdio.h>
+#include "sort.h"
 
-
-int select_sort(int *a, int n)
+void select_sort(int *a, int n)
 {
     int i,j,tmp,b;
 
@@ -21,20 +20,5 @@ int select_sort(int *a, int n)
         }
     }
 
-    return 0;
-}
-
-int main(void)
-{
-    int a[] = {2,4,6,1,0,8,5,9,3,7};
-    int i;
-
-    select_sort(a, 10);
-    for (i=0; i<10; i++)
-    {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-
-    return 0;
+    return;
 }
